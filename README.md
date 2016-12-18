@@ -12,6 +12,18 @@ Summary: The Natural CLI.
 An argparse wrapper that doesn't make you say "argh" each time you deal with it.
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/argh-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/argh-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/argh-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/argh-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/argh-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/argh-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/argh/badges/version.svg)](https://anaconda.org/conda-forge/argh)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/argh/badges/downloads.svg)](https://anaconda.org/conda-forge/argh)
+
 Installing argh
 ===============
 
@@ -32,7 +44,6 @@ It is possible to list all of the versions of `argh` available on your platform 
 ```
 conda search argh --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -68,18 +79,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/argh-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/argh-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/argh-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/argh-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/argh-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/argh-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/argh/badges/version.svg)](https://anaconda.org/conda-forge/argh)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/argh/badges/downloads.svg)](https://anaconda.org/conda-forge/argh)
 
 
 Updating argh-feedstock
