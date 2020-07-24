@@ -13,16 +13,17 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: 1001
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
+  number: 1002
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
+    - pip
     - python
     - setuptools
   run:
     - python
-    - argparse >=1.1  # [py26]
 
 test:
   imports:
@@ -30,7 +31,8 @@ test:
 
 about:
   home: https://github.com/neithere/argh
-  license: LGPL 3
+  license: LGPL-3.0-or-later
+  license_file: COPYING.LESSER
   summary: The Natural CLI.
   description: |
     An argparse wrapper that doesn't make you say "argh" each time you deal with it.
@@ -40,3 +42,4 @@ extra:
   recipe-maintainers:
     - goanpeca
     - daler
+    - tschoonj
