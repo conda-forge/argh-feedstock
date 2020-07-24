@@ -31,6 +31,7 @@ test:
 about:
   home: https://github.com/neithere/argh
   license: LGPL-3.0-or-later
+  license_file: COPYING.LESSER
   summary: The Natural CLI.
   description: |
     An argparse wrapper that doesn't make you say "argh" each time you deal with it.
