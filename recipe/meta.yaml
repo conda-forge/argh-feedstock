@@ -1,7 +1,6 @@
 {% set name = "argh" %}
-{% set version = "0.26.2" %}
-{% set hash_type = "sha256" %}
-{% set hash = "e9535b8c84dc9571a48999094fda7f33e63c3f1b74f3e5f3ac0105a58405bb65" %}
+{% set version = "0.27.1" %}
+{% set hash = "db06d91081f1724e347ccdb789c9570fec94737e755af1598837293e01fc4cd2" %}
 
 package:
   name: {{ name }}
@@ -10,20 +9,20 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   noarch: python
-  number: 1002
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - pip
-    - python
+    - python >=3
     - setuptools
   run:
-    - python
+    - python >=3
 
 test:
   imports:
