@@ -1,6 +1,6 @@
 {% set name = "argh" %}
-{% set version = "0.30.5" %}
-{% set hash = "b37dfd617a09d19a4a7bcaed0e060b288bc7ac8dfdc0facf886a49a25ff33728" %}
+{% set version = "0.31.0" %}
+{% set hash = "b93093544309ddbfe6c73dc9bfd60dbc4acecef39f3f464774b3084a1ec5d7b0" %}
 
 package:
   name: {{ name }}
